@@ -59,27 +59,25 @@ def dogdaemon():
 		# get image
 		getImgurLatest()
 
-		# FIXME - temporarily all pictures are dog pics
-
-		# if image is dog, save to dog path
+		# if image is dog, save to dog path. If not, save to discard path
 		if not (len(os.listdir(pathToLimbo))==0):
-			print('TODO: IMAGE RECOGNITION HERE')
-			print()
+			#print('TODO: IMAGE RECOGNITION HERE')
+			#print()
 			f = str(os.listdir(pathToLimbo)[0])
 			isDog = watson.isADog('https://i.imgur.com/'+f+'.jpg')
-		if(isDog):
-			# 
-		else:
-			# 
+			
+			if(isDog):
+				os.rename(pathToLimbo + f, pathToDogs + f)
+			else:
+				os.rename(pathToLimbo + f, pathToDiscard + f)
 
-		# if image is not dog, save to discard path (for display purposes)
 
 		# FIXME - remove 'allow all' when above is implemented
-		if not (len(os.listdir(pathToLimbo))==0):
-			f = str(os.listdir(pathToLimbo)[0])
-			os.rename(pathToLimbo + f, pathToDogs + f)
-			print('MOVED: ' + pathToLimbo + f + '.jpg to ' + pathToDogs + f + '.jpg')
-			print()
+		#if not (len(os.listdir(pathToLimbo))==0):
+		#	f = str(os.listdir(pathToLimbo)[0])
+		#	os.rename(pathToLimbo + f, pathToDogs + f)
+		#	print('MOVED: ' + pathToLimbo + f + '.jpg to ' + pathToDogs + f + '.jpg')
+		#	print()
 
 		# move files to web if enabled at top
 		if(prod):
