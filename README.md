@@ -44,7 +44,7 @@ WIP: Image Recognition, to know if picture is a dog or not
 - Using our skills with these technologies to create something that adds a little extra happiness to someone's life
 
 ## What we learned
-- How to host a Python-drive website in the cloud
+- How to host a Python-driven website in the cloud
 - How to scrape Imgur for new images and move them to different directories
 
 ## What's next for dogpics
