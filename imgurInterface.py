@@ -11,7 +11,7 @@ q = pyimgur.Imgur(CLIENT_ID)
 
 sleepTime = 5 # normally 5
 maxFilesInDir=30 # normally 100
-imgurLink = 'https://imgur.com/r/dogs' # FIXME: change to /r/pics for final
+imgurLink = 'https://imgur.com/r/rarepuppers' # FIXME: change to /r/pics for final
 prod = True # if in production mode
 
 def dogdaemon():
