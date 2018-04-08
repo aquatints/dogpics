@@ -40,7 +40,7 @@ def dogdaemon():
 		print()
 
 		# check existing number, remove if too much
-		if(numFilesInDogs > maxFilesInDir):
+		if(numFilesInProd > maxFilesInDir+70):
 			purgePick = random.choice(filesInProd)
 			os.remove(pathToWebPics + str(purgePick))
 			print('REMOVED: ' + pathToWebPics + str(purgePick))
