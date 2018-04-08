@@ -6,11 +6,11 @@ Welcome to DOGPICS, an app that displays pictures of dogs.
 
 - Python (3)
 - Flask
-- FIXME (WHICH IMAGE RECOGNITION METHOD)
+- Imgur
 - Google Cloud Platform (for hosting)
 - Github
 
-
+WIP: Image Recognition, to know if picture is a dog or not
 
 
 ## Flowchart
