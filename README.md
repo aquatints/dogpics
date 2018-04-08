@@ -7,6 +7,9 @@ Welcome to DOGPICS! Our app is powered by Python+Flask, Imgur, IBM Watson Visual
 We use IBM Watson to recognize if new pictures uploaded to Imgur feature a dog, and if so, we display them here! Dog lovers are sure to enjoy our good good boys.
 
 
+![DOGPICS SCREENSHOT](https://raw.githubusercontent.com/aquatints/dogpics/master/img/DOGPICS_SCREENSHOT.png)
+
+
 ## Inspiration
 
 A couple of us were hanging out prior to HackPSU, discussing what we should try to do for our project.  One of us jokingly suggested making "Tinder for Dogs", but then we realized that a simple application to give users new pictures of dogs to look at would be great too!
