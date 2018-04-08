@@ -20,7 +20,7 @@ def isADog(urlToImg):
 
 	confidentDog = False
 
-	for i in range(0,4):
+	for i in range(0,2):
 		if('dog' in data["images"][0]['classifiers'][0]['classes'][i]['class']) and (data["images"][0]['classifiers'][0]['classes'][i]['score']>=confidence_threshold):
 			confidentDog = True
 

@@ -4,7 +4,7 @@ import os
 import urllib.request
 import time
 import random
-from . import watson
+import watson
 
 CLIENT_ID = 'd88ae1ac1e85343'
 
@@ -12,7 +12,7 @@ q = pyimgur.Imgur(CLIENT_ID)
 
 sleepTime = 5 # normally 5
 maxFilesInDir=30 # normally 100
-imgurLink = 'https://imgur.com/r/pics'
+imgurLink = 'https://imgur.com/new/time' # default is /r/pics
 prod = True # if in production mode
 
 def dogdaemon():
