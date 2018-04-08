@@ -4,6 +4,7 @@ import os
 import urllib.request
 import time
 import random
+from . import watson
 
 CLIENT_ID = 'd88ae1ac1e85343'
 
@@ -64,6 +65,12 @@ def dogdaemon():
 		if not (len(os.listdir(pathToLimbo))==0):
 			print('TODO: IMAGE RECOGNITION HERE')
 			print()
+			f = str(os.listdir(pathToLimbo)[0])
+			isDog = watson.isADog('https://i.imgur.com/'+f+'.jpg')
+		if(isDog):
+			# 
+		else:
+			# 
 
 		# if image is not dog, save to discard path (for display purposes)
 
