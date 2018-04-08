@@ -19,8 +19,20 @@ def dogdaemon():
 	# Loop that gets new images
 	# TODO LOGIC
 	'''
-	
-	
+	while True:
+		if num files in dogs > 100:
+			randomly pick one to delete
+		if num files in discard > 100:
+			randomly pick one to delete
+
+		call getImgurLatest()
+
+		if Dog:
+			Save to dogs Folder
+		else:
+			Save to discard folder (for demo; otherwise ignore)
+		sleep for 5 seconds
+
 	'''
 
 def getImgurLatest():
