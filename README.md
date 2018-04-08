@@ -24,6 +24,7 @@ WIP: Image Recognition, to know if picture is a dog or not
 - Python (3)
 - Flask
 - Imgur
+- IBM Watson Visual Recognition
 - Google Cloud Platform (for hosting)
 - Github
 
