@@ -4,19 +4,16 @@
 
 <div class="row">
     <div class="col-md-8">
-        <h2>DOGPICS</h2>
-	<a href="/"><img src="{{ dog }}" width="100%"></a>
-	<br>
+        <h2>Report | DOGPICS</h2>
+	<h3>You have selected that this is not a dog.  Are you sure? </h3>
 	<i>Source: <a href="{{ srclink }}">Imgur // {{srclink}} </a></i>
 	<br>
-	<a href="/" class="btn btn-lg btn-primary">That's a good doggo!</a>
-	<br>
-	<br>
-	<form action="{{ url_for('report') }}" method="post">
-	<button type="submit" class="btn btn-danger">That's no doggo :(</button>
-	<input type="hidden" name="reportimg" value="{{ dog }}">
-	<input type="hidden" name="reporturl" value="{{ srclink }}">
-	</form>
+	<form action="{{ url_for('reportConfirm') }}" method="post">
+        <button type="submit" class="btn btn-lg btn-danger">Confirm that this is not a dog!</button>
+        <input type="hidden" name="reportimg" value="{{ dog }}">
+        <input type="hidden" name="reporturl" value="{{ srclink }}">
+        </form>
+	<a href="/" class="btn btn-lg btn-primary">oops, nvm, it's a dog</a>
     </div>
 </div>
 <br><hr><br>
