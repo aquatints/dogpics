@@ -6,7 +6,8 @@ from watson_developer_cloud import VisualRecognitionV3, WatsonApiException
 import sys
 
 url = 'https://gateway-a.watsonplatform.net/visual-recognition/api'
-api_key = 'f8c0c68b5a97fd9c15f3c4a4f4561511782689d5'
+# api_key = 'f8c0c68b5a97fd9c15f3c4a4f4561511782689d5' #old
+api_key = 'b8d54b615a0ddc77f5091dc0a0d6ec0469e9d8f5'
 
 visual_recognition = VisualRecognitionV3('2018-04-08', api_key=api_key)
 classifier_id = 'DOGSDOGSDOGSDOGS'
