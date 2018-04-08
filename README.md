@@ -21,5 +21,8 @@ sudo git checkout backend
 
 cd /dogpics/
 
+sudo wget https://raw.githubusercontent.com/aquatints/dogpics/notes/bootscript.sh
+sudo chmod +x bootscript.sh
+sudo ./bootscript.sh
 
 ```
