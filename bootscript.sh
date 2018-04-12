@@ -4,4 +4,4 @@ screen -dm sudo python3 /dogpics/web/dogpics/runserver.py
 
 sleep 1
 
-screen -dm python3 /dogpics/backend/dogpics/imgurInterface.py
+screen -dm sudo python3 /dogpics/backend/dogpics/imgurInterface.py
