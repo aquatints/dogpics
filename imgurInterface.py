@@ -10,9 +10,9 @@ CLIENT_ID = 'd88ae1ac1e85343'
 
 q = pyimgur.Imgur(CLIENT_ID)
 
-sleepTime = 5 # normally 5
+sleepTime = 30 # normally 5
 maxFilesInDir=30 # normally 100
-imgurLink = 'https://imgur.com/new/time' # default is /r/pics
+imgurLink = 'https://imgur.com/r/pics' # default is /r/pics, get many images from /new/time
 prod = True # if in production mode
 
 def dogdaemon():
@@ -100,7 +100,17 @@ def getImgurLatest():
 	latestPageURL = imgurLink
 	# latestPageURL = 'https://imgur.com/new/time' # temporary testing to see if it can handle more images coming in
 	page = requests.get(latestPageURL)
-	id = getID(page.text)
+	# id = getID(page.text)
+	# trim to get full res
+	page1 = page.text
+	tmpStartLoc = page1.find("<a class=\"image-list-link\" href=\"/r/pics")
+	startLoc = page1.find("pics", tmpStartLoc) + 5
+	endLoc = page1.find("\"",startLoc)
+	target = page1[startLoc:endLoc]
+	print("DEBUG TARGET URL: " + str(target))
+	newPage = requests.get("https://imgur.com/r/pics/" + target)
+	id = getID(newPage.text)
+
 	if(os.path.isfile(pathToDogs + id + '.jpg')) or (os.path.isfile(pathToDiscard + id + '.jpg')) or (os.path.isfile(pathToWebPics + id + '.jpg')):
 		print('Latest Imgur File Existed Already! Skipping!')
 	else:
