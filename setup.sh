@@ -2,6 +2,10 @@ sudo mkdir /dogpics/
 sudo mkdir /dogpics/web/
 sudo mkdir /dogpics/backend/
 
+pip3 install flask
+pip3 install pyimgur
+pip3 install watson-developer-cloud
+
 cd /dogpics/web/
 sudo git clone https://github.com/aquatints/dogpics
 cd dogpics
