@@ -15,6 +15,7 @@ cd /dogpics/backend
 sudo mkdir dogs
 sudo mkdir notdogs
 sudo mkdir discard
+sudo mkdir limbo
 sudo git clone https://github.com/aquatints/dogpics
 cd dogpics
 sudo git checkout backend
