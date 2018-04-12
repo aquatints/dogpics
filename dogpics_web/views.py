@@ -53,6 +53,7 @@ def debug():
 
 def moveToDogs():
 	#todo
+	print("todo")
 
 @app.route('/report', methods=['POST'])
 def report():
