@@ -2,6 +2,10 @@ sudo mkdir /dogpics/
 sudo mkdir /dogpics/web/
 sudo mkdir /dogpics/backend/
 
+sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
+sudo apt-get install python3-pip
+sudo -H pip3 install --ignore-installed six watson-developer-cloud
+
 pip3 install flask
 pip3 install pyimgur
 pip3 install watson-developer-cloud
